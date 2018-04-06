@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+	<link rel='stylesheet' href='/static/style.css'>
+</head>
+	<body>
+		<div class="gg">
+		<h1>World Factbook</h1>
+		<ul>
+			{% for c in w %}
+			<li><a href='/countryByName/{{c.name}}'>
+				<img src='/static/flags/{{c["tld"]}}.gif' class='tiny'>
+			 {{c.name}}</a></li>
+			{% endfor %}
+		</ul>
+		<div class='nav_button'>
+			{% if page_number-page_size == -20 %}
+			<a href="#">Previous Page</a>
+			{% else %}
+			<a href='/begin/{{page_number-page_size}}'>Previous Page</a>
+			{% endif %}
+		</div>
+		<div class='nav_button'>
+			{% if page_number+page_size == 200 %}
+			<a href="#">Next Page</a>
+			{% else %}
+			<a href='/begin/{{page_number+page_size}}'>Next Page</a>
+			{% endif %}
+		</div>
+		<div class="nav_button"><a href="/createcountry"> Create</a></div>
+		</div>
+	</body>
+</html>
