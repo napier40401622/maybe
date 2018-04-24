@@ -6,6 +6,11 @@
 	<body>
 		<div class="gg">
 		<h1>World Factbook</h1>
+		<div>
+			{% for s in lota %}
+			<a href="/showwithAlphabetic/{{s}}">{{s}}</a>
+			{% endfor %}
+		</div>
 		<ul>
 			{% for c in w %}
 			<li><a href='/countryByName/{{c.name}}'>
@@ -27,7 +32,7 @@
 			<a href='/begin/{{page_number+page_size}}'>Next Page</a>
 			{% endif %}
 		</div>
-		<div class="nav_button"><a href="/createcountry"> Create</a></div>
+		<div class="nav_buttonz"><a href="/createcountry"> Create</a></div>
 		</div>
 	</body>
 </html>
