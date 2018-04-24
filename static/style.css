@@ -24,15 +24,16 @@ img.big {
 }
 a{
 	text-decoration: none;
-    background-color: blue;
+}
+.sort a{
+    background-color: green;
     color: white;
     padding: 10px 10px;
-    text-align: center;
-    display: inline-block;
-    list-style-type: none;
+    text-decoration: none;
+    
 }
-a:hover{
-    background-color: red;
+.sort a:hover{
+    background-color: green;
 }
 .gg{
     border-style: solid 1px;
