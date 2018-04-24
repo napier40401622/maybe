@@ -24,10 +24,20 @@ img.big {
 }
 a{
 	text-decoration: none;
+    background-color: blue;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    display: inline-block;
+    list-style-type: none;
+}
+a:hover{
+    background-color: red;
 }
 .gg{
     border-style: solid 1px;
 }
+
 .nav_button{
     border:solid gray thin;
     bottom: auto;

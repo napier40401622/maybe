@@ -1,11 +1,8 @@
-<!doctype html>
-<html>
-<head>
-	<link rel='stylesheet' href='/static/style.css'>
-</head>
-	<body>
+{% extends "main.html" %}
+{% block content %}
 		<h1>{{a}}</h1>
 		<div>There are {{length_of_cl}} countries in {{a}}</div>
+
 		<ul>
 			{% for c in cl %}
 			<li><a href='/countryByName/{{c.name}}'>
@@ -13,5 +10,4 @@
 			 {{c.name}}</a></li>
 			{% endfor %}
 		</ul>
-	</body>
-</html>
+{% endblock %}
