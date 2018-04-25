@@ -25,15 +25,23 @@ img.big {
 a{
 	text-decoration: none;
 }
-.sort a{
+
+ul.sort a{
     background-color: green;
     color: white;
     padding: 10px 10px;
     text-decoration: none;
+    display: inline-block;
+    list-style-type: none;
+    text-align: center;
     
 }
-.sort a:hover{
+ul.sort a:hover{
     background-color: green;
+}
+ul.coun{
+    text-align: center;
+    list-style-type: none;
 }
 .gg{
     border-style: solid 1px;
