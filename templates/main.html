@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel='stylesheet' href='/static/style.css'>
+</head>
+<body>
+<div align="center">
+<a href="/"><h1>World Factbook</h1></a>
+</div>
+<div align="center">
+	<ul class="sort">
+		{% for s in lota %}
+			<a href="/showwithAlphabetic/{{s}}"><li>{{s}}</li></a>
+		{% endfor %}
+	</ul>
+</div>
+
+	<div>
+		{% block content %}
+		{% endblock %}
+	</div>
+
+</body>
+</html>

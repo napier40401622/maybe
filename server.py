@@ -9,9 +9,7 @@ for c in w:
 	c['tld'] = c['tld'][1:]
 page_size = 20
 app = Flask(__name__)
-l=[]
-for x in range(ord('A'),ord('Z')+1):
-        l.append(chr(x))
+
 @app.route('/')
 def mainPage():
 	return render_template('index.html',
