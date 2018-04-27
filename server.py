@@ -66,7 +66,8 @@ def deleteCountryPage(n):
 	return render_template('index.html',
 		page_number=0,
 		page_size=page_size,
-		w = w[0:page_size])
+		w = w[0:page_size],
+                               lota=lota)
 
 #all deleted country will be back on the list after restarting the server
 @app.route('/createcountry')
